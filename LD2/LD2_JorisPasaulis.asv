@@ -1,0 +1,15 @@
+%Joris Pasaulis Ef-25/1 2026-09-16
+%1
+V1 = [-pi:0.7:2*pi]';
+V2 = cos(V1);
+V3=V1.^V2;
+V4 = V3'
+
+%2
+X_mn=[exp(5), exp(-i/exp(1)), log(1); log(pi), -2, sin(-pi)]
+X_1n=[X_mn(2,1)^2, X_mn(1,3), X_mn(2,3)^2]
+X=[X_mn; X_1n]
+
+determinantas=det(X)
+%3
+A=7; f=4;
