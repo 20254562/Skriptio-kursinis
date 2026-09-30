@@ -46,18 +46,13 @@ camlight('right')
 xlabel('x')
 ylabel('y')
 zlabel('z')
-title('apsviestas pavisius')
+title('apšviesta')
 
 figure
-contour(X,Y,z);
+contour(X,Y,z,20)
 colorbar
 xlabel('x')
 ylabel('y')
-title('Konturo grafikas')
+title('Kontūrinis grafikas')
+axis equal
 
-
-figure
-surf(X,Y,z)
-xlabel('x')
-ylabel('y')
-title('paprastas pavirsius')
